@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Acme|Montserrat|Pacifico|Patua+One|Ubuntu" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="./assets/plugins/Lightweight-jQuery-3D-Image-Rotator-Plugin-Carrousel/css/css.css">
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./assets/plugins/Lightweight-jQuery-3D-Image-Rotator-Plugin-Carrousel/js/js.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA04Yc3QSV5bLbA5ux0caOwY9sPU-BnP4M&callback=getLocation" async
+    defer></script>
+
+
+
+  <link rel="stylesheet" href="./assets/plugins/Carousel-Plugin-jQuery-mistCarousel/fonts/mfont.css">
+  <link rel="stylesheet" href="./assets/plugins/Carousel-Plugin-jQuery-mistCarousel/css/project.css">
+  <link rel="stylesheet" href="./assets/plugins/Carousel-Plugin-jQuery-mistCarousel/css/mistCarousel.css">
+
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+
+
+  <link href="./assets/plugins/LogosDistort-master/demo/assets/css/perspectiveRules.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="./assets/plugins/jQuery-Plugin-SVG-Progress-Circle/progresscircle.css">
+
+
+
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="./assets/plugins/jQuery-Progress-Bar-Plugin-LineProgressbar/jquery.lineProgressbar.css" rel="stylesheet" type="text/css">
+
+
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+
+
+  <script src="./assets/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+
+  <header id="sideBar">
+    <div id="sidebar">
+      <div id="sidebarRef">
+
+        <div id="logo" class="w-100 col-*">
+          <a href="">
+            <img src="./assets/images/logo.JPG" alt="">
+          </a>
+        </div>
+        <div id="menu" class="w-100 col-*">
+
+          <button id="menuButton" class="btn">
+            <div class="col-*">
+              <i class="fas fa-align-left"></i>
+            </div>
+            <div class="col-*">
+              <span>MENU</span>
+            </div>
+          </button>
+        </div>
+        <div id="line1" class="w-50">
+
+        </div>
+        <div id="social" class="w-100">
+          <div class="w-100">
+            <button id="gotoFb" class=".btn">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+          </div>
+          <div class="w-100">
+            <button id="gotoInsta" class=".btn">
+              <i class="fab fa-instagram"></i>
+            </button>
+          </div>
+          <div class="w-100">
+            <button id="gotoLinked" class=".btn">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+          </div>
+
+        </div>
+        <div id="line2" class="w-50">
+
+        </div>
+        <div id="unknown" class="w-100">
+          <a href="index.html">
+            <i class="fas fa-retweet"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <header id="toggleSidebar">
+    <div class="w-100">
+      <div class="row  ">
+        <div id="toggleLogo">
+          <a href="">
+            <img src="./assets/images/logo.JPG" alt="">
+          </a>
+        </div>
+        <div class="row">
+          <div id="toggleMenu" class="">
+
+            <button id="menuButton2" class="btn">
+              <div class="col-*">
+                <i class="fas fa-align-left"></i>
+              </div>
+              <div class="col-*">
+                <span>MENU</span>
+              </div>
+            </button>
+          </div>
+          <div id="toggleUnknown" class="">
+            <a href="#">
+              <i class="fas fa-retweet"></i>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </header>
+
+  <button class="btn" id="getInTouch">
+    <i class="far fa-envelope"></i>
+   
+  </button>
+
+  <section id="menuOnClick">
+    <div class="container ">
+      <div class="row">
+
+        <div id="namePlugin" class="col-12">
+          <script src="./assets/plugins/Airport-Text-Shuffle-Animation/textShuffle.js"></script>
+          <div class="content col-12">
+            <div class="random">
+              <span class="span nbr ltr">0</span>
+              <span class="span nbr ltr">0</span>
+              <span class="span nbr ltr">0</span>
+              <span class="span nbr ltr">0</span>
+              <span class="span nbr ltr">0</span>
+              <span class="span nbr ltr">0</span>
+              <span class="span nbr ltr">0</span>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 menuItem">
+          <span>
+            <a href="#about">About</a>
+          </span>
+        </div>
+        <div class="col-12 menuItem">
+          <span>
+            <a href="#resume">Resume</a>
+          </span>
+        </div>
+        <div class="col-12 menuItem">
+          <span>
+            <a href="#skills">Skills</a>
+          </span>
+        </div>
+        <div class="col-12 menuItem">
+          <span>
+            <a href="#projects">Projects</a>
+          </span>
+        </div>
+        <div class="col-12 menuItem">
+          <span>
+            <a href="#contact">Contact</a>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="banner">
+    <div class="overlay-wrapped">
+      <div class="mist-overlay"></div>
+      <section class="main-section">
+        <div id="mistify">
+          <div class="mistify__slide">
+            <a href="#" class="mistify__slide-content mist-link">
+              <p class="mistify__slide-description">Hey there!</p>
+              <h1 class="mistify__slide-title">I'm Kartik Kehar</h1>
+              <p class="mistify__slide-timestamp">1</p>
+            </a>
+            <img class="mistify__slide-background" src="./assets/images/20160117_115017.jpg" alt="bg">
+          </div>
+          <div class="mistify__slide">
+            <a href="#" class="mistify__slide-content mist-link">
+              <p class="mistify__slide-description"></p>
+              <h1 class="mistify__slide-title">Front-end Web Developer</h1>
+              <p class="mistify__slide-timestamp">2</p>
+            </a>
+            <img class="mistify__slide-background" src="./assets/images/IMG_5137.JPG" alt="bg">
+          </div>
+          <div class="mistify__slide">
+            <a href="#" class="mistify__slide-content mist-link">
+              <p class="mistify__slide-description">1 yr experience in Freelancing</p>
+              <h1 class="mistify__slide-title">I stretch boundaries of Web Designs</h1>
+              <p class="mistify__slide-timestamp">3</p>
+            </a>
+            <img class="mistify__slide-background" src="./assets/images/DSC03801.JPG" alt="bg">
+          </div>
+          <div class="mistify__slide">
+            <a href="#" class="mistify__slide-content mist-link">
+              <p class="mistify__slide-description">Awesome Designs</p>
+              <h1 class="mistify__slide-title">Featuring High Quality Code</h1>
+              <p class="mistify__slide-timestamp">4</p>
+            </a>
+            <img class="mistify__slide-background" src="./assets/images/IMG20170323115702.jpg" alt="bg">
+          </div>
+        </div>
+        <a class="main-section__logo mist-link" href="index.html">Kartik Kehar</a>
+
+      </section>
+      <!-- scripts-->
+
+      <script src="./assets/plugins/Carousel-Plugin-jQuery-mistCarousel/js/mistCarousel.js"></script>
+      <script src="./assets/plugins/Carousel-Plugin-jQuery-mistCarousel/js/main.js"></script>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="w-100">
+      <div class="row w-100">
+
+
+        <div id="scroll" class="col-lg-3">
+          <div id="scrollDownLogo" class: "row">
+            <div id="scrollDownLogoDiv"></div>
+          </div>
+          <div id="scrollDownSpan">
+            <span>
+              <a id="scrollSomeDown" href="#"> Scroll Down</a>
+            </span>
+          </div>
+        </div>
+        <div id="option" class="col-lg-7 row">
+          <div class="col-sm-3">
+            <span>
+              <a href="#about"> ABOUT</a>
+            </span>
+          </div>
+          <div class="col-sm-2">
+            <span>
+              <a href="#resume"> RESUME</a>
+            </span>
+          </div>
+          <div class="col-sm-2">
+            <span>
+              <a href="#skills">SKILLS</a>
+            </span>
+          </div>
+          <div class="col-sm-2">
+            <span>
+              <a href="#projects"> PROJECTS</a>
+            </span>
+          </div>
+          <div class="col-sm-3">
+            <span>
+              <a href="#contact"> CONTACT</a>
+            </span>
+          </div>
+        </div>
+        <div id="scrollBlank" class="col-lg-2"></div>
+      </div>
+
+
+
+    </div>
+  </footer>
+
+
+  <section id="about">
+    <div id="about1" class="container-fluid">
+      <div class="row">
+        <div id="about1Image" class="col-lg-5">
+          <div></div>
+          <img src="./assets/images/DSC03703.JPG" alt="img">
+        </div>
+        <div id="about1data" class="col-lg-7">
+          <div id="about1Headings">
+            <h2>lorem</h2>
+            <h3>loefeomknnjsc</h3>
+            <h3>lorenjcsnibhc
+              <span>lorem</span> hdsjbcdshb</h3>
+          </div>
+          <div id="about1Desc">
+            <p>Creative web developer dedicated to building and optimizing the performance of user-centric, high-impact websites
+              for nationwide, F500 and global companies. Leverage technical, analytical and problem-solving skills to create
+              dynamic, high-speed websites, apps and platforms fueling competitive advantage and revenue growth.</p>
+          </div>
+          <div id="about1Para" class="row">
+            <div class="col-md-6 row">
+              <div class="col-3">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <div class="col-9">
+                <h2>Client side Web Development</h2>
+                <p>Innovative Solutions to boost your Projects with latest Technologies for Single Page Applications </p>
+              </div>
+            </div>
+            <div class="col-md-6 row">
+              <div class="col-3">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="col-9">
+                <h2>UI/UX Design</h2>
+                <p>I focus on making Websites Responsive to make my designs Handy</p>
+              </div>
+            </div>
+            <div class="col-md-6 row">
+              <div class="col-3">
+                <i class="fas fa-tv"></i>
+              </div>
+              <div class="col-9">
+                <h2>Web Design</h2>
+                <p>Dynamic And Creative Designs For Websites for a great User Experience</p>
+              </div>
+            </div>
+            <div class="col-md-6 row">
+              <div class="col-3">
+                <i class="fas fa-share"></i>
+              </div>
+              <div class="col-9">
+                <h2>Hosting And Mainitainance</h2>
+                <p>Giving a Domain Name to website makes the build complete along with services like Maintainance for my Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about2" class="w-100 ">
+      <div id="about2a">
+        <div id="about2Blank" class="col-md-5"></div>
+        <div id="about2Img" class="col-md-7">
+          <img src="./assets/images/IMG_5153.JPG" alt="">
+        </div>
+      </div>
+      <div id="about2b">
+        <div id="about2Heading">
+          <h2>loresmd</h2>
+          <h3>ndsjcncscd
+            <span>sadubewubd</span>
+          </h3>
+        </div>
+        <div id="about2Para">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, tempora ipsam. Qui voluptatibus, reiciendis sint
+            est sit, animi ipsam sed dolor laborum voluptates aperiam nesciunt reprehenderit nostrum amet, quas atque!</p>
+        </div>
+        <div id="about2Facts" class="row">
+          <div class="col-md-3 ">
+            <div class="firstSpan">
+              <span>2324</span>
+            </div>
+            <div class="row">
+              <div id="about2After" class="col-2">
+                <span>2324</span>
+              </div>
+              <div class="col-10">
+                <button class="btn">Finished Projects</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="firstSpan">
+              <span>2324</span>
+            </div>
+            <div class="row">
+              <div id="about2After" class="col-2">
+                <span>2324</span>
+              </div>
+              <div class="col-10">
+                <button class="btn">Finished Projects</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="firstSpan">
+              <span>2324</span>
+            </div>
+            <div class="row">
+              <div id="about2After" class="col-2">
+                <span>2324</span>
+              </div>
+              <div class="col-10">
+                <button class="btn">Finished Projects</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="firstSpan">
+              <span>2324</span>
+            </div>
+            <div class="row">
+              <div id="about2After" class="col-2">
+                <span>2324</span>s</div>
+              <div class="col-10">
+                <button class="btn">Finished Projects</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="resume">
+    <div class="container">
+      <div id="resumeHeading" class="container">
+        <div>
+          <h2>hdsjnkjsnkjs</h2>
+          <h1>MY AWESOME
+            <span>STORY</span>
+          </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab perspiciatis odit, magnam eligendi recusandae
+            at facere iusto pariatur quod maxime atque quaerat unde velit neque, eaque, assumenda asperiores veritatis?</p>
+
+        </div>
+        <div id="resumeBack">
+          <span>RESUME</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="journey" class="w-100">
+
+    <div class="container-fluid row">
+      <div id="journey1" class="col-6">
+        <div id="journeyLogo">
+
+        </div>
+        <div id="journeyEnd"></div>
+        <i id="journeyIcon" class="fas fa-graduation-cap"></i>
+        <div id="journeyFreelancing" class="w-100 row">
+          <div  class="w-100">
+            <h2 class="w-100">August 2018-2019</h2>
+            <dl class="w-100">
+              <dt>Doing Freelancing</dt>
+              <dd>Making Projects on Angular</dd>
+            </dl>
+          </div>
+        </div>
+        <div id="journeyJava" class="w-100 row">
+            <div  class="w-100">
+              <h2 class="w-100">June 2017-July-2017</h2>
+              <dl class="w-100">
+                <dt>Training in Core Java </dt>
+                <dd>Projects on Java </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="journeyHigherSecondary" class="w-100 row">
+              <div  class="w-100">
+                <h2 class="w-100">2013-August 2015</h2>
+                <dl class="w-100">
+                  <dt>Higher Secondary Education</dt>
+                  <dd>Passed with 93.4% </dd>
+                </dl>
+              </div>
+            </div>
+      </div>
+      <div id="journey2" class="col-6">
+          <div id="journeyWebDeveloper" class="w-100 row">
+              <div  class="w-100">
+                <h2 class="w-100">June 2018-July-2018</h2>
+                <dl class="w-100">
+                  <dt>Training in WebDevelopment</dt>
+                  <dd>Projects on Angular/React/UI</dd>
+                </dl>
+              </div>
+            </div>
+            <div id="journeyBtech" class="w-100 row">
+                <div  class="w-100">
+                  <h2 class="w-100">August 2015-July-2019</h2>
+                  <dl class="w-100">
+                    <dt>Started persuing Btech</dt>
+                    <dd>In Electronics And TeleCommunication</dd>
+                  </dl>
+                </div>
+              </div>
+              <div id="journeyHighSchool" class="w-100 row">
+                  <div  class="w-100">
+                    <h2 class="w-100">2011-2013</h2>
+                    <dl class="w-100">
+                      <dt>High Schooling</dt>
+                      <dd>Passed with 83.3%</dd>
+                    </dl>
+                  </div>
+                </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="skills">
+    <div class="w-100 skillsBack">
+      <div class="col-8 skillsImg">
+        <img src="./assets/images/design.jpg" alt="">
+      </div>
+      <div class="skillsDummy col-4"></div>
+
+    </div>
+    <div class="skillsTop container">
+      <div>
+        <h2>My Own
+          <span>Developer's</span> and</h2>
+        <h3> Design Skills</h3>
+      </div>
+      <div id="skillsTopPara">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nemo sapiente aperiam necessitatibus quaerat quod!
+          Voluptate hic maiores neque cupiditate, nihil natus repudiandae quis perspiciatis, reiciendis voluptatum sit maxime
+          esse!
+        </p>
+      </div>
+
+
+    </div>
+
+
+  </section>
+  <section id="skills2">
+    <div id="pictorialSkills" class="container">
+      <div id="designSkills" class="container w-100">
+
+        <div id="designMain" class="w-100 row">
+          <div id="designMainInside" class="col-4">
+            <h2>Design Skills</h2>
+            <p> recusandae laudantium, saepe eius et necessitatibus, obcaecati labore! Possimus voluptatibus impedit non neque
+              repellat officiis voluptatum!</p>
+          </div>
+
+          <div class="circlechart col-2" data-percentage="90">HTML5</div>
+
+
+          <div class="circlechart col-2" data-percentage="80">CSS3</div>
+
+
+          <div class="circlechart col-2" data-percentage="80">JS/jQuery</div>
+
+        </div>
+
+        <script src="./assets/plugins/jQuery-Plugin-SVG-Progress-Circle/progresscircle.js"></script>
+        <script>
+
+          $('.circlechart').circlechart(); // Initialization
+        </script>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+
+          (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
+
+      </div>
+
+
+
+    </div>
+    <div id="developerSkills" class="container">
+      <div class="w-100 row">
+        <div id="developerSkillsDesc" class="col-3 w-100">
+
+          <div>
+            <h2>Developer Skills</h2>
+            <p> recusandae laudantium, saepe eius et necessitatibus, obcaecati labore! Possimus voluptatibus impedit non neque
+              repellat officiis voluptatum!</p>
+          </div>
+
+        </div>
+        <div id="developerSkillsPictorial" class="col-7 w-100">
+          <div>
+            <h2>Angular2 Onwards</h2>
+            <div id="jq"></div>
+            <h2>AngularJS</h2>
+            <div id="html"></div>
+            <h2>ReactJS</h2>
+            <div id="css"></div>
+          </div>
+          <script src="./assets/plugins/jQuery-Progress-Bar-Plugin-LineProgressbar/jquery.lineProgressbar.js"></script>
+          <script>
+
+            $('#jq').LineProgressbar({
+              percentage: 40,
+              radius: '3px',
+              height: '10px',
+            });
+            $('#html').LineProgressbar({
+              percentage: 80,
+              radius: '3px',
+              height: '10px',
+              fillBackgroundColor: '#DA4453'
+            });
+            $('#css').LineProgressbar({
+              percentage: 40,
+              radius: '3px',
+              height: '10px',
+              fillBackgroundColor: '#E0C341'
+            });
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="w-100">
+    <div>
+      <div class="wrap" id="wrap" data-setting='{
+          "width":1000,
+           "heihgt":270,
+           "firstPicWidth":640,
+           "firstPicHeight":270,
+           "scale":0.9,
+           "speed":1000
+            }'>
+        <div class="gg_left gg_btn"></div>
+        <div class="gg_right gg_btn"></div>
+        <ul class="wrap_ul">
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=633" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=627" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=631" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=630" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=634" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=635" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=628" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=637" width="100%" alt="">
+            </a>
+          </li>
+          <li class="li_item">
+            <a href="">
+              <img src="https://unsplash.it/640/270?image=638" width="100%" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <h2>My
+        <span>Projects</span>
+      </h2>
+      <div id="projectArc"></div>
+    </div>
+    <script type="text/javascript">
+      $(function () {
+        Carrousel.init($('#wrap'));
+      })
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </section>
+  <section id="contact" class="w=100">
+
+    <div id="demo1">
+      <img alt="background" src="./assets/plugins/LogosDistort-master/demo/assets/images/background.png" />
+      <div id="particle-target"></div>
+      <div id="myContact" class="w-100 row">
+        <div id="contactBlank" class="col-7">
+          <div id="contactBlankImage">
+            <img src="./assets/images/logo.JPG" alt="">
+          </div>
+
+        </div>
+        <div id="contactDiv" class="col-5">
+          <div>
+            <h3>I am available for freelance.Can't wait for the next project! Could it be yours?</h3>
+            <div id="map" class="w-100">
+
+            </div>
+            <div id="contactDetails" class="row">
+              <div class="col-12 row">
+                <i class="fas fa-phone col-1"></i>
+                <h4 class="col-2">Phone </h4>
+                <span class="col-9">+91-8010601654</span>
+              </div>
+              <div class="col-12 row">
+                <i class="fas fa-envelope col-1"></i>
+                <h4 class="col-2">Mail </h4>
+                <span class="col-9">kehar.kartik31@gmail.com</span>
+              </div>
+              <div class="col-12 row">
+                <i class="fas fa-map-marker-alt col-1"></i>
+                <h4 class="col-2">Address </h4>
+                <span class="col-9">326/1 D-6 Sec-6 Rohini Delhi-110085</span>
+              </div>
+            </div>
+            <div id="contactSocial">
+              <button class="btn">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button class="btn">
+                <i class="fab fa-instagram"></i>
+              </button>
+              <button class="btn">
+                <i class="fab fa-linkedin-in"></i>
+              </button>
+            </div>
+          </div>
+          <div id="contactName">
+            <h1>Kartik Kehar</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./assets/plugins/LogosDistort-master/demo/assets/js/jquery.particleground.min.js"></script>
+    <script src="./assets/plugins/LogosDistort-master/dist/jquery.logosDistort.js"></script>
+    <script>
+      var particles = {
+        dotColor: '#1ec5ee',
+        lineColor: '#0a4e90',
+        density: 20000,
+        parallax: false
+      };
+      var particleDensity;
+      var options = {
+        effectWeight: 1,
+        outerBuffer: 1.05,
+        elementDepth: 200,
+        perspectiveMulti: 1.5,
+        enableSmoothing: true,
+        onInit: function () {
+          $('#particle-target').particleground(particles);
+        }
+      };
+
+      $('#min-max-tag').click(function () {
+        if ($('#demo-menu').hasClass('closed')) {
+          $('#demo-menu').removeClass('closed').addClass('open');
+        } else {
+          $('#demo-menu').removeClass('open').addClass('closed');
+        }
+      });
+
+      $(document).ready(function () {
+
+        $('#demo1').logosDistort(options);
+
+      });
+    </script>
+  </section>
+
+
+
+
+</body>
+
+</html>

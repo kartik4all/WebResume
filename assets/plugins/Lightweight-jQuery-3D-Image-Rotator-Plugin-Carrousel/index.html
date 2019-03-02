@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Carrousel 3D Rotator Demo</title>
+	<link rel="stylesheet" href="css/css.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/js.js"></script>
+    <style>
+    body { background-color:#333;}
+    h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
+    </style>
+</head>
+<body>
+
+
+
+	<div class="wrap" id="wrap" data-setting='{
+											"width":1000,
+										 	"heihgt":270,
+										 	"firstPicWidth":640,
+									 		"firstPicHeight":270,
+										 	"scale":0.9,
+										 	"speed":500
+												}'>
+		<div class="gg_left gg_btn"></div>
+		<div class="gg_right gg_btn"></div>
+		<ul class="wrap_ul">
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=633" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=627" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=631" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=630" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=634" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=635" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=628" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=637" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="https://unsplash.it/640/270?image=638" width="100%" alt=""></a></li>
+		</ul>
+	</div>
+<script type="text/javascript">
+		$(function(){
+			Carrousel.init($('#wrap'));
+		})
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1252 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.hide{
+    display: none;
+}
+.btn{
+    outline: none !important;
+    border: none !important;
+}
+
+#sidebar {
+    /* display: none; */
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#sidebarRef{
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+#logo{
+    position: absolute;
+    top: 0px;
+    
+}
+#logo img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   padding: 13px;
+}
+
+#menu {position: absolute;
+    top: 12%;
+    
+    padding: 10px;
+    text-align: center;
+}
+#menu span{
+    font-size: 13px;
+    color:#8c898a;
+    margin-right: 7px;
+}
+#menu i{
+    font-size: 30px;
+    color: #fac921;
+    padding-right: 7px;
+}
+#menu .btn{
+    background: transparent;
+    
+    
+}
+#menu:hover span{
+    transition: 0.5s;
+    color: white;
+}
+
+#line1, #line2{position: absolute;
+    
+    height: 10%;
+    
+    border-right: 2px solid #8c898a;
+}
+#line1{
+    top: 25%;
+}
+#line2{
+    top: 70%;
+}
+#social{position: absolute;
+    top: 37%;
+    padding: 0px;
+    text-align: center;
+   
+}
+#social div{
+    margin-top: 30%;
+    
+   
+}
+button{
+    cursor: pointer;
+}
+#social button{
+    transition: 0.5s;
+    background: transparent;
+    border: 1px solid #8c898a;
+    width: 35px;
+    height: 35px;
+}
+#social i{
+    transition: 0.5s;
+    color: #8c898a;
+}
+#social button:hover i{
+    color: white;
+}
+#social button:hover {
+    border-radius: 50%;
+}
+#unknown{position: absolute;
+    bottom: 0px;
+    
+    background-color: #fac921;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+  
+    
+}
+#unknown i{
+    color: white;
+    font-size: 25px;
+    padding-top: 7px;
+}
+/* .........................................toggleSidebar......................... */
+
+#toggleSidebar{
+    
+    height: 80px;
+    background-color:#2a2a2e;
+}
+#toggleSidebar>div{
+    height: 100%;
+    position: relative;
+}
+ #toggleLogo{
+    height: 100%;
+    width: 80px ;
+    
+}
+#toggleLogo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 11px;
+    margin-left: 15px !important;
+}
+
+#toggleSidebar .row{
+    justify-content: space-between;
+    
+    margin-right: 0px;
+}
+
+#toggleMenu {
+   
+    
+    padding: 10px;
+    text-align: center;
+}
+#toggleMenu span{
+    font-size: 13px;
+    color:#8c898a;
+    margin-right: 7px;
+}
+#toggleMenu i{
+    font-size: 30px;
+    color: #fac921;
+    padding-right: 7px;
+}
+#toggleMenu .btn{
+    background: transparent;
+    
+    
+}
+#toggleMenu:hover span{
+    transition: 0.5s;
+    color: white;
+}
+#toggleUnknown{
+    
+    
+    background-color: #fac921;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+  
+    
+}
+#toggleUnknown i{
+    color: white;
+    font-size: 25px;
+    padding-top: 7px;
+}
+
+/* ................................getInTouch........................... */
+#getInTouch{
+    position: fixed;
+    
+    z-index: 100;
+    right: 0px;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    background-color: #FAC921;
+}
+#getInTouch i{
+    position: absolute;
+    right: 28px;
+    top: 29px;
+    font-size: 20px;
+    color: white;
+    z-index: 100;
+}
+@media(max-width:992px){
+    #getInTouch{
+        display: none;
+    }
+}
+
+
+/* ..................................menuOnClick..........................,,,,,,,,,,,,,,,,, */
+#menuOnClick>div{
+    font-family: 'Kanit', sans-serif;
+height: 100%;
+position: absolute;
+
+background-color: #252425;
+
+width: 400px;
+
+}
+#menuOnClick{
+
+    position: fixed;
+    top: 0px;
+    z-index: 90;
+left:0px;
+    height: 100%;
+    opacity: 0;
+    transition: 1s ;
+    transform: translate(-400px,0px);
+}
+#menuOnClick a{
+    color: #FAC921;
+}
+
+.menuItem span{
+    margin: 5px;
+    font-size: 19px;
+    position: absolute;
+    color: white;
+}
+.menuItem{
+    height: 40px;
+    padding: 2px;
+    padding-top: 6px;
+   
+    cursor: pointer;
+    margin-left: 25%;
+    position: relative;
+}
+.menuItem:hover span{
+    color: #fac921;
+}
+
+.menuItem::before{
+    width: 0%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.menuItem:hover::before{
+    width: 60%;
+    transition: 1s;
+}
+
+
+#namePlugin {
+    margin-top: 27%;
+text-align: center;
+   height: 30%;
+   font-size: 35px;
+   font-weight: 400;
+   color: white;
+   margin-bottom: 20%;
+}
+#namePlugin::after{
+    height: 90%;
+    width: 160px;
+    content: '';
+    top: 5px;
+    right: 45px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.091);
+}
+#namePlugin:hover::after{
+    width: 0px;
+    transition: 1s;
+}
+
+@media(max-width:576px){
+    #menuOnClick>div{
+        width: 170px !important;
+    }
+    /* #menuOnClick .row{
+        width: 200px !important;
+    } */
+    .menuItem span{
+        font-size: 15px;
+    }
+    #namePlugin{
+        font-size: 18px;
+    }
+    #namePlugin::after{
+        width: 80px;
+        right: 30px;
+    }
+}
+/* ..................................banner.................................. */
+#banner{
+    width: 100%;
+    height: 655px;
+}
+/* ...............................footer............................ */
+
+footer{
+    
+    height: 80px;
+    background-color: #2d2d32;
+}
+.fixFooter {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 120;
+  }
+
+footer div{
+    height: 100%;
+    margin: 0px ;
+}
+#scroll{background-color: #2d2d32;
+height: 100%;
+position: relative;}
+#scrollDownLogo{
+    position: absolute;
+    left: 42%;
+    top: 22px;
+    width: 20px;
+    height: 30px !important;
+    border: 2px solid #838386;
+    border-radius: 30%
+}
+#scrollDownLogo>div{
+    justify-content: center;
+    width: 3px;
+    height: 8px !important;
+    background-color: #fac921;
+    animation: scroll 1.5s infinite linear;
+}
+@keyframes scroll {
+    0% {
+        transform: translate(6px,3px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(6px,17px);
+        opacity: 0;
+    }
+}
+
+#scrollDownSpan{
+    position: absolute;
+    right: 22%;
+    top: 30px;
+}
+#scroll:hover #scrollDownSpan a{
+    color: #fac921;
+    transition: 0.5s;
+}
+#scroll:hover {
+    cursor: pointer;
+}
+
+#scroll div{
+    height: 100%
+}
+
+
+#option{background-color: #2a2a2e;
+text-align: center;
+
+}
+#option span {
+    margin-top: 30px;
+    position: absolute;
+    
+}
+#option a , #scrollDownSpan a{
+    text-decoration: none;
+    color: #8c898a;
+    font-size: 11px;
+    
+    font-weight: 700;
+}
+#option span::before{
+    width: 10px;
+    height: 0px;
+    left: -15px;
+    content: '';
+    position: absolute;
+    top: 7px;
+    border-bottom: 1px solid #fac921;
+}
+#option>div>span:hover  a{
+    color: #fac921;
+    transition: 0.5s;
+}
+
+#scrollBlank{background-color: #2d2d32;}
+@media(max-width:992px){
+    #scroll , #scrollBlank{
+        display: none;
+    }
+}
+@media(max-width:576px){
+    footer{
+        display: none;
+    }
+}
+
+/* ....................................about1............................... */
+
+#about1 ,#about1>div{
+    height: 750px;
+    
+}
+#about1{
+    margin-top: 9%;
+    
+}
+#about1Image{
+    position: relative;
+    padding-left: 6%;
+    padding-right: 4%;
+    height: inherit;
+    
+}
+#about1Image>div{
+    height: 500px;
+    position: absolute;
+    width: 80%;
+    background-color: #FAC921;
+    top: 11%;
+}
+#about1Image img{
+    position: absolute;
+    right: 4%;
+    top: 0%;
+    height: 90%;
+    width: 70%;
+}
+
+#about1data{
+    padding: 3%;
+    padding-top: 0%;
+    height: 100%;
+    
+    content: '';
+}
+#about1Headings h2 {
+    height: 30px;
+    font-size: 20px;
+    color: #838386;
+   
+}
+
+#about1Headings h3 {
+   
+    height: 40px;
+    font-size: 30px;
+    
+}
+#about1Headings {
+    position: relative;
+    font-family: 'Acme', sans-serif;
+}
+#about1Headings:after{
+    width: 8%;
+    height: 2px;
+    content: '';
+    background-color: #FAC921;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+#about1Headings::before{
+    width: 100%;
+    height: 100%;
+    content: 'ABOUT';
+    font-size: 120px;
+    z-index: -1;
+    color: #f7f7f7;
+    position: absolute;
+    top: -30%;
+    font-weight: bolder;
+
+}
+#about1Headings h3 span{
+    color: #FAC921;
+}
+#about1Desc{
+    padding-top: 25px;
+    height: 190px;
+    font-size: 18px;
+    color: #8c898a;
+    font-family: 'Acme', sans-serif;
+    font-weight: 100;
+  
+}
+#about1Para>div{
+    margin: 2% 0%;
+    
+}
+#about1Para i{
+    font-size: 40px;
+}
+#about1Para h2{
+    position: relative;
+    font-size: 20px;
+    color: #8c898a;
+    margin-bottom: 14px;
+    font-family: 'Acme', sans-serif;
+}
+#about1Para h2::after{
+    width: 15%;
+    height: 2px;
+    content: '';
+    background-color: #FAC921;
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+}
+#about1Para p{
+    font-size: 12px;
+    color: #8c898a;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    
+}
+@media(max-width:992px){
+    #about1{
+        height: 1580px;
+    }
+}
+@media(max-width:768px){
+    #about1{
+        height: 1820px;
+    }
+}
+@media(max-width:576px){
+    #about1Headings::before{
+        font-size: 90px;
+        top: 0%;
+    }
+    #about1Headings h2{
+        font-size: 15px;
+    }
+    #about1Headings h3{
+        font-size: 20px;
+    }
+    about1Para p{
+        display: none;
+    }
+    #about1Desc{
+        font-size: 13px;
+    }
+}
+/* .....................................about2.............................. */
+#about2{
+    height: 600px;
+  
+}
+#about2a{
+width: 100% !important;
+    height: 600px;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+#about2Blank{
+    height: 100%;
+    background-color: #2a2a2e;
+    margin: 0px;
+    padding: 0px;
+}
+#about2Img{
+    margin: 0px;
+    padding: 0px;
+}
+#about2Img img{
+    width: 100%;
+    height: 85%;
+    margin: 0px;
+    padding: 0px;
+}
+#about2Heading{
+    padding-top: 2%;
+    padding-left: 10%;
+   font-family: 'Acme', sans-serif;
+}
+
+#about2Heading h2{
+    font-size: 35px;
+    color: white;
+    height: 40px;
+}
+#about2Heading h3{
+    font-size: 35px;
+    color: white;
+    height: 40px;
+}
+#about2Heading h3 span{
+    color: #FAC921;
+    font-size: 35px;
+    
+    height: 40px;
+}
+#about2Para{
+    padding-top: 2%;
+    padding-left: 10%;
+    font-size: 15px;
+    color: white;
+    width: 50%;
+    font-family: 'Ubuntu', sans-serif;
+}
+#about2Facts{
+    margin-top: 80px;
+    font-family: 'Acme', sans-serif;
+}
+#about2Facts>div{
+    text-align: center;
+    height: 70px;
+    
+    
+}
+#about2Facts span{
+    
+    font-size: 30px;
+    color: white;
+}
+#about2Facts button{
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #99999B;
+}
+#about2After{
+    position: relative;
+}
+#about2After::after{
+    position: absolute;
+    height: 3px;
+    width: 30%;
+    content: '';
+    background-color: #FAC921;
+    bottom: 15px;
+    right: -140%;
+}
+#about2After span{
+    display: none;
+}
+@media(max-width:775px){
+    #about2After span{
+        display: block;
+    }
+    
+    .firstSpan {
+        display: none;
+    }
+    #about2Facts{
+        margin-top: 20px;
+    }
+    #about2Facts button{
+        margin-top: 30px;
+    }
+    #about2After span{
+        margin-left: 200%;
+        margin-top: 20px;
+    }
+    #about2Para{
+       
+        font-size: 10px;
+        
+    }
+    #about2Heading h2{
+        font-size: 20px;
+       
+       
+    }
+    #about2Heading h3{
+        font-size: 20px;
+      
+    }
+    #about2Heading h3 span{
+       
+        font-size: 20px;
+        
+    }
+}
+@media(max-width:992px){
+    #about2After::after{
+        display: none;
+    }
+}
+
+/* ...................................resume.............................. */
+#resume , #resume>div{
+    height: 450px;
+ 
+}
+#resumeHeading{
+    margin-top: 100px;
+    height: 250px;
+    position: relative;
+    border-left: 4px solid #fac921;
+    font-family: 'Ubuntu', sans-serif;
+}
+#resumeHeading h2{
+    padding-top: 30px;
+    font-size: 16px;
+    color: #99999B;
+    font-weight: bolder;
+}
+#resumeHeading>div{
+    margin-left: 3%;
+}
+#resumeHeading h1{
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#resumeHeading p{
+    padding-top: 30px;
+    font-size: 17px;
+    color: #99999B;
+    font-weight: 300;
+    font-family: 'Acme', sans-serif;
+}
+#resumeHeading span{
+    padding-top: 30px;
+    font-size: 43px;
+    color: #FAC921;
+    font-weight: bolder;
+}
+#resumeBack span{
+    font-size: 1300%;
+    color: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    left: 5%;
+    top: -25%;
+}
+@media(max-width:768px){
+    #resumeBack span{
+        font-size: 800%;
+    }
+}
+@media(max-width:576px){
+    #resumeBack span{
+        font-size: 600%;
+    }
+}
+/* ......................................journey........................... */
+#journey{
+    height: 1600px;
+}
+#journey1 , #journey2{
+    height: 1450px;
+    }
+
+#journeyLogo{
+    top: -50px;
+    right: -46px;
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        background-color: #FAC921;
+        transform: rotate(45deg);
+        z-index: 0.1;
+    }
+#journeyEnd{
+    top: 1430px;
+    right: -36px;
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        background-color: #FAC921;
+        transform: rotate(45deg);
+        z-index: 0.1;
+}
+    #journeyIcon{
+        top: -27px;
+        right: -27px;
+            font-size: 40px;
+            position: absolute;
+            color: white;
+           
+            z-index: 0.2;
+        }
+
+#journey1{
+        position: relative;
+        border-right: 2px solid black;
+    }
+#journeyFreelancing , #journeyJava ,#journeyHigherSecondary{
+    margin-top: 80px;
+    height: 200px;
+    
+    position: relative;
+   
+    
+}
+#journeyHigherSecondary{
+    margin-top: 270px;
+ 
+}
+#journeyJava{
+    margin-top: 270px;
+}
+#journeyFreelancing>div ,#journeyJava>div ,#journeyHigherSecondary>div{
+    height: 100%;    
+    text-align: right;
+    margin-right: 30px;
+}
+#journey1 dt{
+    
+    font-size: 22px;
+    font-family: 'Acme', sans-serif;
+    color: black;
+    margin-top: 25px;
+}
+#journey1 dd{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #99999B;
+    margin: 3% 0%;
+}
+#journey1 h2{
+    margin-top: 40px;
+    font-size: 13px;
+    font-family: 'Acme', sans-serif;
+    color: #99999B;
+    width: 100px;
+    
+}
+#journeyFreelancing::after , #journeyJava::after ,#journeyHigherSecondary::after{
+content: '';
+width: 30px;
+height: 30px;
+position: absolute;
+background-color: #FAC921;
+border-radius: 50%;
+right: -46px;
+top: 30px;
+}
+
+#journeyWebDeveloper ,#journeyBtech , #journeyHighSchool{
+margin-top: 315px;
+height: 200px;
+
+position: relative;
+
+}
+#journeyBtech{
+    margin-top: 270px;
+    }
+ #journeyHighSchool{
+        margin-top: 270px;
+       
+        }
+
+#journeyWebDeveloper>div ,#journeyBtech>div ,  #journeyHighSchool>div{
+height: 100%;    
+margin-left: 60px;
+}
+#journey2 dt{
+
+font-size: 22px;
+font-family: 'Acme', sans-serif;
+color: black;
+margin-top: 25px;
+}
+#journey2 dd{
+font-size: 15px;
+font-family: 'Ubuntu', sans-serif;
+color: #99999B;
+margin: 3% 0%;
+}
+#journey2 h2{
+margin-top: 40px;
+font-size: 13px;
+font-family: 'Acme', sans-serif;
+color: #99999B;
+width: 100px;
+
+}
+#journeyWebDeveloper::before ,#journeyBtech::before , #journeyHighSchool::before{
+content: '';
+width: 30px;
+height: 30px;
+position: absolute;
+background-color: #FAC921;
+border-radius: 50%;
+left: -16px;
+top: 30px;
+}
+
+/* .....................................skills.............................. */
+
+#skills , #skills>div{
+    height: 600px;
+}
+#skills>div{
+    display: flex;
+}
+.skillsDummy{
+    height: 100%;
+    background-color: #2a2a2e;
+}
+#skills img{
+    height: 90%;
+    width: 100%;
+}
+.skillsImg{
+    padding: 0px !important;
+   
+}
+.skillsBack{
+    position: absolute;
+    z-index: -2;
+}
+.skillsTop{
+    position: relative;
+    text-align: right;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skillsTop h2  {
+    /* margin-top: 15%; */
+  
+    font-size: 35px;
+    color: white;
+}
+.skillsTop h3{
+    /* margin-top: 2%; */
+    
+    font-size: 35px;
+    color: white;
+}
+.skillsTop>div{
+    position: absolute;
+    right: 5%;
+    top: 100px;
+    width: 50%;
+}
+.skillsTop span{
+   
+    font-size: 35px;
+    color: #FAC921;
+}
+#skillsTopPara{
+    position: absolute;
+    right: 5%;
+    top: 300px;
+    width: 50%;
+    font-size: 15px;
+    color: #f7f7f7;
+}
+@media(max-width:768px){
+    #skillsTopPara{
+        width: 80%;
+        font-size: 12px;
+    }
+    .skillsTop>div{
+        width: 80%;
+        font-size: 20px;
+    }
+}
+#pictorialSkills{
+    
+    margin-top: 100px;
+}
+#designSkills{
+    height: 300px;
+    
+   
+}
+#designMainInside{
+    height: 200px;
+    border-left: 4px solid #fac921;
+    padding-left: 4%;
+    padding-top: 15px;
+}
+#designMain{
+    justify-content: space-between;
+}
+#designMain>div{
+    padding-top: 30px;
+    
+}
+#designMain>div h2{
+    font-family: 'Acme', sans-serif;
+    font-size: 23px;
+    
+}
+#designMain>div p{
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#developerSkills>div{
+    height: 300px;
+    
+}
+#developerSkillsDesc{
+    height: 200px;
+    
+   
+}
+#developerSkillsDesc>div{
+    border-left: 4px solid #fac921;
+    height: inherit;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 17%;
+}
+#developerSkillsDesc>div h2{
+    padding-top: 25px;
+    font-size: 23px;
+    font-family: 'Acme', sans-serif;
+}
+#developerSkillsDesc>div p{
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#developerSkillsPictorial{
+    margin-left: 10%;
+    height: 200px;
+    margin-top: 15px;
+    
+}
+#developerSkillsPictorial>div{
+    margin-left: 10%;
+    margin-top: 0px;
+}
+#developerSkillsPictorial h2{
+    font-size: 12px;
+}
+/* ........................................projects............................ */
+#projects{
+    height: 600px;
+    background-color: #2a2a2e;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+#projects>div{
+    width: 100%;
+    padding-top: 200px;
+}
+#projectArc{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: -50px;
+    border-radius: 70%;
+    
+}
+#projects h2{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+#projects span{
+    font-size: 50px;
+    color: #FAC921;
+    
+}
+/* ...................................contact.......................... */
+#contact{
+    height: 600px;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+#contactDiv{
+    position: relative;
+ 
+    width: 100%;
+    padding: 0px;
+}
+#contactDiv>div{
+    padding-top: 50px;
+    width: 80%;
+    margin: 5%;
+    
+    height: 500px;
+}
+#contactDiv h3{
+    width: 100%;
+    
+    color: #FAC921;
+}
+#map{
+    margin-top: 30px;
+    height: 300px;
+    border-radius: 1%;
+}
+#contactDetails i{
+    font-size: 17px;
+    color: #FAC921;
+}
+#contactDetails{
+    margin-top: 30px;
+}
+#contactDetails span{
+    font-size: 15px;
+    color: white;
+}
+#contactDetails h4{
+    font-size: 17px;
+    color: #99999B;
+}
+#contactDetails>div{
+    margin: 7px;
+}
+#contactSocial .btn{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    border: 1px solid white;
+    color: white;
+}
+/* #contactSocial .btn:hover #contactSocial .btn i{
+color: #FAC921;
+} */
+#contactName h1{
+    left: -45%;
+    top: 300px;
+    color: white;
+    position: absolute;
+    font-size:85px;
+     -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+       -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+          -ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+
+
+
+#contactBlankImage{
+    
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+
+}
+#contactBlank{
+    position: relative;
+    
+}
+#contactBlankImage img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media(max-width:992px){
+    #contact , #myContact{
+        height: 700px;
+    }
+    .ld-smart-container{
+        height: 700px;
+    }
+    
+    #contactName h1{
+        font-size:65px;
+    }
+    #map{
+        height: 150px;
+        
+    }
+    #contactDiv{
+        margin-left: 70%;
+    }
+    #contactBlank{
+        display: none;
+    }
+    #contactDiv{
+        width: 1000px;
+    }
+    #contactName{
+        display: none;
+    }
+}
+
+@media(max-width:860px){
+    #contactDiv{
+        margin-left: 80%;
+    }
+    #contactBlank{
+    
+      
+       display: none;
+    
+    }
+}
+
+@media(max-width:760px){
+    #contactDiv{
+        margin-left: 100%;
+    }
+    
+}
+@media(max-width:560px){
+    #contactDiv{
+        margin-left: 120%;
+    }
+    
+}
+@media(max-width:500px){
+    #contactDiv{
+        margin-left: 150%;
+    }
+    
+}
+@media(max-width:400px){
+    #contactDiv{
+        margin-left: 180%;
+    }
+    
+}
